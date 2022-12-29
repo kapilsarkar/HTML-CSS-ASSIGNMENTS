@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #fff;
+}
+/* STYLE FOR NAVBAR */
+.navbar{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center;
+    align-items: center; */
+    align-items: center;
+    gap: 6rem;
+    /* padding-left: 60px; */
+    padding-top: 30px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navbar ul li{
+    list-style: none;
+    display: flex;
+    /* justify-content: center; */
+    font: 1.2em "Fira Sans", sans-serif;
+    font-weight: 300;
+    color: #fff;
+   
+}
+.navbar ul li:hover{
+    cursor: pointer;
+    color: #f4694c;
+}
+.btn1{
+   
+    font: 1.2em "Fira Sans", sans-serif;
+    cursor:pointer;
+    padding: 10px 20px;
+    color: #fff;
+    background: none;
+}
+.btn1:hover{
+    background-color: #fff;
+    color: #242B2E;
+    animation: wiggle 2s linear infinite;
+}
+.btn{
+    padding: 16px 32px;
+    background-color: #f4694c;
+    color: #fff;
+    border: none;
+    font: 16px "Fira Sans", sans-serif;
+    cursor:pointer;
+
+}
+.btn:hover{
+    background-color: #fff;
+    color: #242B2E;
+    animation: wiggle 2s linear infinite;
+}
+
+
+.navbtn{
+    display: flex;
+     padding-left: 360px; 
+}
+/* STYLE FOR HERO SECTION */
+.hero{
+   background: url('./Assets/Photos/futuristic-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 100px;
+  height: 700px;
+}
+.hero-left{
+    width: 41%;
+   
+}
+.hero-bottom{
+    color: #fff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+.hero-bottom h1{
+    font: 48px "Fira Sans", sans-serif;
+    line-height: 150%;
+    font-weight: 600;
+}
+.hero-bottom .heropara{
+    font: 16px "Fira Sans", sans-serif;
+    line-height: 150%;
+    font-weight: 600;
+    padding-top: 30px;
+}
+.hero-btns{
+    margin-top: 40px;
+}
+.herobtn1{
+    padding: 14px 29px;
+    background-color: #f4694c;
+    color: #fff;
+    border: none;
+    font: 16px "Fira Sans", sans-serif;
+    cursor:pointer;
+
+    
+    /* transition-property: width;
+  transition-duration: 1s; */
+
+}
+.herobtn1:hover{
+    background-color: #fff;
+    color: #242B2E;
+    animation: wiggle 2s linear infinite;
+}
+/* .herobtn1 .ttf-cubic {
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  .herobtn1:is(:hover, :focus) {
+    width: 50%;
+  } */
+
+
+
+
+.herobtn2{
+    cursor:pointer;
+    font: 1.2em "Fira Sans", sans-serif;
+    padding: 10px 20px;
+    color: #fff;
+    background: none;
+    border: 2px solid #758283;
+    margin-left: 15px;
+}
+.herobtn2:hover{
+    background-color: #fff;
+    color: #242B2E;
+    animation: wiggle 2s linear infinite;
+}
+.hero-right{
+    width: 40%;
+    
+}
+.hero-rigth2{
+    margin-top: 290px;
+}
+
+  .play-btn{
+    position: relative;
+    top: 160px;
+   padding-left: 420px;
+
+  }
+  
+  .hero-rigth2 h3{
+    position: relative;
+    left: 300px;
+    font: 32px "Fira Sans", sans-serif;
+    line-height: 150%;
+
+  }
+  .hero-rigth2 img{
+    position: relative;
+    left: 240px;
+    top: 23px;
+  }
+  .right-arrow{
+    position: relative;
+    left: 360px;
+    top:-50px
+  }
+
+
+.heropara{
+    animation-duration: 9s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .hlh{
+    animation-duration: 9s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+/* STYLE FOR GAME SECTION */
+.games{
+  background-color: #fff;
+  
+}
+.games-top h1{
+  color: #000308;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: 32px "Fira Sans", sans-serif;;
+  font-weight: 900;
+  line-height: 150%;
+  margin-top: 70px;
+}
+.games-bottom{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding-left: 40px;
+  margin-top: 60px;
+  gap: 25px;
+  padding-right: 40px;
+ 
+}
+.game-1{
+  background: url("./Assets/Photos/image\ 2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.gamereview{
+  background-color: transparent;
+  width: 100%;
+  padding: 100px 9px;
+  /* height: 100%; */
+  position: relative;
+  top:120px;
+}
+.gamehead h3{
+  color: #fff;
+  font:16px"Fira Sans", sans-serif;
+  font-weight: 700;
+}
+.gamehead p{
+  color: #fff;
+  font:14px"Fira Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3px;
+}
+.gamebtn{
+  background-color: #f4694c;
+  color: #fff;
+  font:14px"Fira Sans", sans-serif;
+  border: none;
+  padding: 10px 25px;
+  position: relative;
+  left: 200px;
+  bottom: 46px;
+}
+.game-2{
+  background: url("./Assets/Photos/image\ 4.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.game-3{
+  background: url("./Assets/Photos/image\ 3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.game-4{
+  background: url('./Assets/Photos/Rectangle\ 56.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* STYLE FOR WAR GAME SECTION */
+.wargame{
+  background-color: #fff;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.warleftimg{
+  background-image: url('./Assets/Photos/Rectangle\ 57.png');
+  background-repeat: no-repeat;
+  border: none;
+  background-size: 100% 100%;
+  height: 320px;
+  width: 360px;
+  padding: 10px 90px;
+  margin-left: 43px;
+}
+.war-right{
+  margin-left: 60px;
+}
+.war-right-head h1{
+  font:32px "Fira Sans", sans-serif;
+  font-weight:900;
+  
+}
+.war-para p{
+  font:16px "Fira Sans", sans-serif;
+  font-weight:300;
+  line-height: 150%;
+  margin-top: 30px;
+}
+.war-btn{
+  margin-top: 50px;
+}
+.war-btn1{
+  background-color: #f4694c;
+  color: #fff;
+  font:16px"Fira Sans", sans-serif;
+  border: none;
+  padding: 15px 30px;
+
+  animation: wiggle 2s linear infinite;
+
+
+}
+
+
+
+
+.war-btn2{
+  background-color: #fff;
+  color: #f4694c;
+  border: 1px solid #f4694c;
+  font:16px"Fira Sans", sans-serif;
+  padding: 15px 30px;
+  margin-left: 20px;
+}
+.games-reco{
+  background-color: #fff;
+  margin-top: 100px;
+  padding-left: 38px;
+}
+.reco-head h1{
+  font:32px "Fira Sans", sans-serif;
+  font-weight:900;
+}
+.lr-arrow{
+  display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 20px;
+    position: relative;
+    bottom: 60px;
+    padding-left: 900px;
+}
+.lr-arrow div:nth-child(1){
+  background-color:#fde1db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.lr-arrow div:nth-child(2){
+  background-color:#f4694c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.game-set01{
+  margin-top: 70px;
+  display: flex;
+  gap: 50px;
+ 
+}
+.game-set01-img1{
+  background-image: url(./Assets/Photos/Rectangle\ 75.png);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 200px;
+}
+.game-set01-head h1{
+  font:24px "Fira Sans", sans-serif;
+  font-weight:900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-set01-para{
+  display: flex;
+  /* justify-content: center; */
+  font:12px "Fira Sans", sans-serif;
+  font-weight:900;
+  padding-top: 10px;
+}
+
+/* CSS FOR BUTTON ANIMATION STARTS*/
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+/* CSS FOR BUTTON ANIMATION END */
+.game-set01btn{
+  background-color: #f4694c;
+  color: #fff;
+  font:16px"Fira Sans", sans-serif;
+  border: none;
+  padding: 15px 30px;
+  margin-top: 20px;
+}
+.game-actn{
+  color: #f4694c;
+  font:16px "Fira Sans", sans-serif;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.game-set01-img2{
+  background-image: url(./Assets/Photos/Rectangle\ 76.png);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 200px;
+}
+.game-set01-head2 h1{
+  font:24px "Fira Sans", sans-serif;
+  font-weight:900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 27px;
+}
+.game-set01-img3{
+  background-image: url(./Assets/Photos/Rectangle\ 77.png);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 200px;
+}
+.game-set01-img4{
+  background-image: url(./Assets/Photos/Rectangle\ 78.png);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 200px;
+}
+/* sSTYLE FOR MOST PLAYED GAMES */
+.mst-played-game{
+  position: relative;
+  background-color: #0D0D0D;
+  padding: 40px 8%;
+  margin-top: 90px;
+}
+.mst-played-game div:nth-child(1) h1{
+  color: #fff;
+  text-align: center;
+  font:32px "Fira Sans", sans-serif;
+  font-weight:900;
+}
+.mst-played-game .played-games .data-para p{
+  color: #fff;
+  font:18px "Fira Sans", sans-serif;
+  font-weight:500;
+  line-height: 150%;
+}
+
+.played-games .games-played{
+  display: flex;
+  height: 600px;
+  gap: 40px;
+}
+.played-games .games-played .played-game1{
+ background-image: url(./Assets/Photos/Rectangle\ 17.png);
+ background-size: 100% 100%;
+ 
+ flex: 1;
+ height: 360px;
+ 
+}
+.played-games .games-played .played-game2{
+  background-image: url(./Assets/Photos/Rectangle\ 18.png);
+  background-size: 100% 100%;
+  
+  flex: 1;
+  height: 360px;
+  align-self: flex-end;
+ 
+}
+.played-games .games-played .played-game3{
+  background-image: url(./Assets/Photos/Rectangle\ 90.png);
+  background-size: 100% 100%;
+  
+  flex: 1;
+  height: 260px;
+  align-self: flex-end;
+}
+.played-games .game-of-world{
+  width: 66.5%;
+}
+.played-games .game-of-world img{
+  width: 100%;
+}
+.played-games .data-para{
+  position: absolute;
+  top: 22%;
+  right: 12%;
+}
+.played-games .game-of-world {
+  position: absolute;
+  right: 0;
+  top: 39%;
+  z-index: 0;
+}
+/* STYLE FOR UNFORGATABLE GAMER */
+.gamer-black-back{
+  background-color:#0D0D0D;
+  padding: 22px 0;
+}
+.gamer-back{
+  background-image: url(./Assets/Photos/Rectangle\ 606.png);
+  background-size: 100% 100%;
+}
+.gamer-back .main-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top:7%;
+  padding-bottom: 7%;
+  
+}
+.gamer-back .main-div button{
+  background-color: #f4694c;
+  border: #f4694c;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font:16px "Fira Sans", sans-serif;
+  animation: wiggle 2s linear infinite;
+}
+.gamer-header{
+  color: #fff;
+  text-align: center;
+  font:32px "Fira Sans", sans-serif;
+  font-weight:900;
+}
+.gamer-para{
+  text-align: center;
+  color: #fff;
+  font:16px "Fira Sans", sans-serif;
+  font-weight:700;
+  margin-top: 20px;
+
+}
+/* STYLE FOR FOOTER */
+.footer{
+  background-color:#0D0D0D;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 8%;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+.social-para{
+  color: #ffffff;
+}
+.social-icon{
+  display: flex;
+}
+.other-stuff{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  color: #ffffff;
+  gap: 2%;
+  flex: 8;
+}
+.social-media{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 2;
+}
+.social-media .social-logo img{
+  width: 120px;
+}
+.social-media .social-para p{
+  font:16px "Fira Sans", sans-serif;
+  color: #758283;
+}
+.social-icon{
+  display: flex;
+  gap: 10px;
+}
+.social-icon .facebook img{
+width: 35px;
+}
+.social-icon .instagram img{
+  width: 35px;
+}
+.social-icon .twitter img{
+  width: 35px;
+}
+.other-stuff div li{
+  list-style: none;
+}
+.other-stuff div li a{
+  text-decoration: none;
+  color:#908f90;
+  font:16px "Fira Sans", sans-serif;
+  padding-top: 30px;
+}
+.other-stuff div li a:hover{
+  color: #f4694c;
+}
+.other-stuff div ul{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.articles h3{
+  color: #fff;
+  font:24px "Fira Sans", sans-serif;
+  
+}
